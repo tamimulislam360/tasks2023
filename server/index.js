@@ -33,7 +33,7 @@ if (process.env.NODE_ENV !== "test") {
 
 // All routes
 app.get("/", (req, res) => {
-  res.json({
+  res.send({
     message: "Welcome to the task manager api.",
     baseURI: "http://localhost:5000/api",
     tasksURI: "http://localhost:5000/api/tasks",
